@@ -50,6 +50,11 @@
 	<!-- Media Queries -->
 	<link rel="stylesheet" href="css/media-queries.css">
 
+	<!-- For ticket system css -->
+	<link rel="stylesheet" href="/css/tickets.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+
 	<!--
 		Google Font
 		=========================== -->
@@ -98,6 +103,11 @@
 	<!--
         Welcome Slider
         ==================================== -->
+
+
+
+
+
 	<section id="home">
 
 		<div id="slitSlider" class="sl-slider-wrapper">
@@ -113,6 +123,29 @@
 								<img class="wow fadeInUp" src="img/meghna2.png" alt="Meghna">
 								<h2 data-wow-duration="500ms" data-wow-delay="500ms"
 									class="heading animated fadeInRight">Formula SAE Tec Racing</h2>
+								<section class="ticket-popUp">
+									<div class="popup">
+										<div class="popup__container">
+											<button type="button" class="close-button"></button>
+											<h2 class="popup__title">Participa en nuestra rifa!</h2>
+											<h5>Apoya a nuestro grupo estudiantil y participa para ganar una gorra de
+												Checo Pérez</h5>
+											<a href="https://buy.stripe.com/test_aEU3eEg8RbiG8BGcMM">
+
+												<button class="stripe-call">
+													<span class="stripe-call__text">Quiero mi boleto</span>
+												</button>
+											</a>
+											<img class="popup__image"
+												src="https://cdn.shopify.com/s/files/1/0521/5535/1216/products/image_b9dc076e-bca3-4adc-87bd-5d81d85189a1_1100x.jpg?v=1664237454"
+												alt="Gorra Sergio Peréz">
+
+										</div>
+									</div>
+									<button class="popup-button">¿Quieres tener la oportunidad de ganar una gorra de
+										Checo Pérez Edición
+										Especial?</button>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -1209,6 +1242,9 @@
 	<!-- Custom js -->
 	<script src="js/custom.js"></script>
 
+
+	<!-- ticker system -->
+	<script src="js/tickets.js"></script>
 </body>
 
 </html>

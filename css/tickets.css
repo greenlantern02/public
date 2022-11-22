@@ -1,0 +1,109 @@
+.ticket-popUp {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000000;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 300ms, opacity 300ms;
+}
+
+.popup h5 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    /* not bold */
+    font-style: normal;
+    color: #000;
+}
+
+.popup__title {
+    font-size: 36px;
+    margin: 0 0 18px;
+    color: #000 !important;
+}
+
+.popup__container {
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    padding: 45px;
+
+    /* center it */
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80vh;
+    width: 80vw; */
+}
+
+.popup__image {
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    background: url('/img/close-button-svgrepo-com.svg') center center / 100% 100% no-repeat;
+    width: 60vw;
+    height: auto;
+    fill: #000;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+}
+
+
+/* img {
+    width: 60vw !important;
+    height: auto !important;
+} */
+
+.close-button h2 {
+    color: #000;
+}
+
+
+
+.popup-button {
+    margin: 30px;
+    padding: 10px;
+    font-family: inherit;
+    background: #536fb2;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.stripe-call {
+    width: 189px;
+    height: 50px;
+    background: #536fb2;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 20px;
+}
